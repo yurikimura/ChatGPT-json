@@ -1,7 +1,5 @@
 # ChatGPT-API-Server
 
-## 🌟Star Me If You Like It!🌟 
-
 reference: https://platform.openai.com/docs/quickstart
 
 ## Setup
