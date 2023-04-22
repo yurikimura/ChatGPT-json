@@ -14,16 +14,13 @@ def index():
         response = openai.ChatCompletion.create(
             model=MODEL,
             messages=[
-                {"role": "user", "content": generate_prompt(text)},
+                {"role": "user", "content": text},
             ],
             temperature=1,
         )
         return {'reply':response['choices'][0]['message']['content']}
     else:
         return {'reply':"hello"}
-
-def generate_prompt(text):
-    return text
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
